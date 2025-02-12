@@ -16,7 +16,7 @@ class FastApiHandler:
             "model_params": dict
         }
 
-        self.model_path = "models/catboost_churn_model.bin"
+        self.model_path = "../models/catboost_churn_model.bin"
         self.load_churn_model(model_path=self.model_path)
         
         # Необходимые параметры для предсказаний модели оттока
@@ -134,7 +134,7 @@ class FastApiHandler:
         else:
             return response
 
-if __name__ == "__main__":
+"""if __name__ == "__main__":
 
     # Создаем тестовый запрос
     test_params = {
@@ -168,3 +168,4 @@ if __name__ == "__main__":
     # Делаем тестовый запрос
     response = handler.handle(test_params)
     print(f"Response: {response}")
+    """
